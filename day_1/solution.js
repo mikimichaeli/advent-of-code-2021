@@ -20,7 +20,7 @@ const mapToSlidingWindowSums = (arrayOfNumbers, windowLength) => {
 }
 
 function solve() {
-    const input = readLines('2.input.txt').map(Number);
+    const input = readLines('input.txt').map(Number);
     const slidingWindowSums = mapToSlidingWindowSums(input, 3);
     return countNumberOfIncreases(slidingWindowSums);
 }

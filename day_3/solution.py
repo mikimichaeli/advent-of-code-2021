@@ -40,6 +40,6 @@ def life_support_rating(rows):
     return int(rows_oxygen[0], 2) * int(rows_co2[0], 2)
 
 dir_path = os.path.dirname(os.path.realpath(__file__))
-input_rows = read_input(dir_path + '/1.input.txt')
+input_rows = read_input(dir_path + '/input.txt')
 print(f"Power Consumption = {power_consumption(input_rows)}")
 print(f"Life Support Rating = {life_support_rating(input_rows)}")
